@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paradise Guide</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body style="background-color: #ddeebb">
+        <div style="background-image: url(images/cover11.jpg); height: 200px; width: 1350px; ">
+            <br>
+            
+            <div class="social" >
+                
+                <a href="#"><img style="margin-right: 20px;"  src="images/fb.png"></a>
+                <a href="#"><img style="margin-right: 20px;" src="images/gplus.png"></a>            
+                <a href="#"><img src="images/tw.png"></a>
+            </div>
+            
+            <div style="padding-left: 1050px; padding-top: 20px;" ><h3>Hotline +94(77)2062062</h3></div>
+            <script type="text/javascript">
+                tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+                function GetClock() {
+                    var d = new Date();
+                    var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getYear(), nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
+
+                    if (nhour == 0) {
+                        ap = " AM";
+                        nhour = 12;
+                    }
+                    else if (nhour < 12) {
+                        ap = " AM";
+                    }
+                    else if (nhour == 12) {
+                        ap = " PM";
+                    }
+                    else if (nhour > 12) {
+                        ap = " PM";
+                        nhour -= 12;
+                    }
+
+                    if (nyear < 1000)
+                        nyear += 1900;
+                    if (nmin <= 9)
+                        nmin = "0" + nmin;
+                    if (nsec <= 9)
+                        nsec = "0" + nsec;
+
+                    document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
+                }
+
+                window.onload = function () {
+                    GetClock();
+                    setInterval(GetClock, 1000);
+                }
+            </script>
+            <h3><div id="clockbox" style="margin-left: 1050px; "></div></h3>
+
+        </div>
+        <br>
+        <div id="hmenu"> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="#">Locations</a></li> 
+                <li><a href="#">Residences</a></li> 
+                <li><a href="#">Transports</a></li> 
+                <li><a href="#">Traveling method</a></li> 
+                <li><a href="#">My Preference</a></li> 
+                <li><a href="#">Contact Us</a></li> 
+            </ul>   
+        </div> 
+
+        <br>
+        <div class="sli">
+            <script type="text/javascript">
+                var image1 = new Image()
+                image1.src = "images/slide/6.jpg"
+                var image2 = new Image()
+                image2.src = "images/slide/2.jpg"
+                var image3 = new Image()
+                image3.src = "images/slide/5.jpg"
+                var image4 = new Image()
+                image4.src = "images/slide/3.jpg"
+                var image5 = new Image()
+                image5.src = "images/slide/10.jpg"
+                var image6 = new Image()
+                image6.src = "images/slide/4.jpg"
+                var image7 = new Image()
+                image7.src = "images/slide/8.jpg"
+
+            </script>
+            <img name="slide">
+            <script type="text/javascript">
+                var step = 1
+                function slideit() {
+                    document.images.slide.src = eval("image" + step + ".src")
+                    if (step < 7)
+                        step++
+                    else
+                        step = 1
+                    setTimeout("slideit()", 3500)
+
+                }
+                slideit()
+            </script>
+        </div>
+        
+        
+        
+        <br>
+        <img style="margin-left: 400px;" src="images/des.jpg" width="550" height="309">
+        <br><hr>
+        <div id="hmenu"> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+                <p style="margin-left: 900px;">All Rights reserved@Paradise_guide</p>
+                
+            </ul>   
+        </div> 
+
+    </body>
+</html>
