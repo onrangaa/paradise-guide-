@@ -1,0 +1,74 @@
+.offscreen { 
+  position: absolute; 
+  top: -30em; 
+  left: -300em; 
+} 
+
+div#hmenu { 
+   margin: 0; 
+   padding: .6em 0 .6em 0; 
+   background: #ddeebb; 
+   width: 1350px; 
+   text-align: center; 
+} 
+
+div#hmenu ul { 
+   list-style: none; 
+   margin: 0; 
+   padding: 0; 
+} 
+
+div#hmenu ul li { 
+   margin: 0; 
+   padding: 0; 
+   display: inline; 
+} 
+
+div#hmenu ul a:link{ 
+   margin: 20px; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: medium; 
+   color: #004415; 
+} 
+
+div#hmenu ul a:visited{ 
+   margin: 20px; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: medium; 
+   color: #227755; 
+} 
+
+div#hmenu ul a:active{ 
+   margin: 20px; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: medium; 
+   color: #227755; 
+} 
+
+div#hmenu ul a:hover{ 
+   margin: 20px; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: medium; 
+   color: #f6f0cc; 
+   background-color: #227755; 
+}
+
+.sli{
+    padding-left: 400px;
+}
+h2{
+    color: #004415;
+}
+
+.social{
+    padding-left: 1050px; 
+   
+}
